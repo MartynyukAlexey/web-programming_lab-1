@@ -1,0 +1,33 @@
+services:
+    apache:
+        container_name: apache
+        image: httpd:2.4
+        restart: always
+        volumes:
+            - ./src:/var/www/html
+            - ./httpd/httpd.conf:/usr/local/apache2/conf/httpd.conf
+        depends_on:
+            - php
+        ports:
+            - 80:80
+
+    php:
+        container_name: php
+        build: ./php
+        restart: always
+        volumes:
+            - ./src:/var/www/html
+            - ./php/php.ini:/usr/local/etc/php/php.ini
+        depends_on:
+            - database
+        env_file:
+            - .env
+
+    database:
+        container_name: database
+        image: mysql
+        restart: always
+        volumes:
+            - ./database:/docker-entrypoint-initdb.d
+        env_file: 
+            - .env

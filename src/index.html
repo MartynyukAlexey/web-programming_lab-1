@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="icon" href="./img/kitty.ico">
+    <title>lab-1</title>
+</head>
+<body>
+
+    <header class="container">
+        <a href="#" class="hidden-320"><img src="./img/logo.svg" alt="Logo" class="logo"></a>
+        <h2 class="hidden-716">Web programming</h2>
+        <ul class="">
+            <li>
+                <a href="https://vk.com/mrrtynyuk">
+                    <img src="./img/vk.svg" alt="VK" class="icon">
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/MartynyukAlexey">
+                    <img src="./img/github.svg" alt="GitHub" class="icon">
+                </a>
+            </li>
+            <li>
+                <a href="https://t.me/MartynyukAlexey">
+                    <img src="./img/telegram.svg" alt="Telegram" class="icon">
+                </a>
+            </li>
+        </ul>
+    </header>
+
+    <main class="container">
+
+        <h1>Laboratory work 1</h1>
+        
+        <form id="form">
+            <p id="generated-message">Try to hit the colored area!</p>
+
+            <input type="text" name="x" placeholder="x" id="form_x">
+            <label for="form_x" id="form_x-label"></label>
+
+            <input type="text" name="y" placeholder="y" id="form_y">
+            <label for="form_y" id="form_y-label"></label>
+
+            <input type="text" name="r" placeholder="r" id="form_r">
+            <label for="form_r" id="form_r-label"></label>
+
+            <button id="form_button">Submit</button>
+            <label for="form_button" id="form_button-label"></label>
+        </form>
+
+        <img src="img/php-elephant.svg" id="generated-image">
+        
+        <table id="generated-table"></table>
+
+    </main>
+
+    <footer class="container">
+        <p>November 2023</p>
+        <p>Martynyuk Alexey</p>
+    </footer>
+
+    <script src="./js/input-validation.js"></script>
+    <script src="./js/form-handler.js"></script>
+    <script src="./js/api.js"></script>
+</body>
+</html>
