@@ -1,27 +1,13 @@
 # web-programming_lab-1
 
-## Результат
-
-Попробовать можно здесь -> [http://mrrtynyuk.ru/lab-1](http://mrrtynyuk.ru/lab-1/)
-
-Условия всех лабораторных работ -> [ИТМО ВТ](https://se.ifmo.ru/courses/web)
-
-Лабораторные работы курса объединены в один общий проект (см. диаграму ниже). Данный репозиторий охватывает **зеленую** часть проекта.
-
 ![Диаграмма](./.assets/project-structure.svg)
 
-Репозитории с другими работами курса:
+## Локальный запуск
 
-- [web-programming_lab-2](https://github.com/MartynyukAlexey/web-programming_lab-2)
-- [web-programming_lab-3](https://github.com/MartynyukAlexey/web-programming_lab-3)
-- [web-programming_lab-4](https://github.com/MartynyukAlexey/web-programming_lab-4)
-
-## Запуск на локальном устройстве
-
-Для запуска на локальном устройстве достаточно склонировать репозиторий и выполнить `docker compose up --build -d`:
+Клонируем репозиторий и выполняем `docker compose up --build -d`:
 ![Пример запуска](./.assets/startup-example.png)
 
-После чего сайт будет доступен на `localhost`:
+После проект станет доступен на `localhost`:
 ![Работающий сайт](./.assets/running-project.png)
 
 ## Вопросы к защите лабораторной работы
